@@ -1,4 +1,4 @@
-{[
+[
     ["node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h","#import <RCTAnimation/RCTValueAnimatedNode.h>","#import <RCTValueAnimatedNode.h>"],
     ["node_modules/react-native-fs/package.json",'\"version\": \"v', '\"version\": \"v']
-]}
+]
