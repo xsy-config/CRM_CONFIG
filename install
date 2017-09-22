@@ -1,0 +1,6 @@
+#!/usr/bin/python
+# -*- coding=UTF-8 -*-
+import sys
+import os
+
+os.system('curl -C -  -o /usr/local/bin/xsy https://raw.githubusercontent.com/xsy-config/CRM_CONFIG/master/tool.py && chmod +x /usr/local/bin/xsy')
