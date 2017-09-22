@@ -1,0 +1,75 @@
+{
+  "name": "ingage",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest --no-cache"
+  },
+  "dependencies": {
+    "moment": "^2.14.1",
+    "react": "15.3.2",
+    "react-native": "^0.33.0",
+    "react-native-action-sheet": "^1.0.0",
+    "react-native-actionsheet": "^2.0.3",
+    "react-native-fs": "^1.5.1",
+    "react-native-keyboard-spacer": "^0.3.0",
+    "react-native-router-flux": "^3.30.0",
+    "react-native-simple-modal": "^3.1.0",
+    "react-native-simple-store": "1.1.0",
+    "react-native-sound": "^0.8.3",
+    "react-native-storage": "^0.1.4",
+    "react-native-svg": "^4.3.1",
+    "react-native-viewpager": "^0.2.11",
+    "react-native-xsy-fs": "^1.0.3",
+    "react-native-xsy-sound": "^0.1.0",
+    "react-native-xsy-svg": "0.5.0",
+    "react-native-xsy-zip-archive": "0.0.2",
+    "react-native-xsy-upgrade": "0.0.6",
+    "react-redux": "^4.4.4",
+    "redux": "^3.4.0",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1",
+    "rn-viewpager": "^1.1.2",
+    "xmldom": "^0.1.22"
+  },
+  "devDependencies": {
+    "babel-jest": "*",
+    "babel-plugin-transform-class-properties": "*",
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-react-native": "*",
+    "jest-cli": "^12.1.1",
+    "react-addons-test-utils": "*",
+    "react-shallow-renderer-helpers": "*",
+    "reactotron": "^0.6.0",
+    "redux-devtools": "^3.2.0",
+    "remote-redux-devtools": "^0.3.2",
+    "remote-redux-devtools-on-debugger": "^0.4.4"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^image![a-zA-Z0-9$_-]+$": "GlobalImageStub",
+      "^[./a-zA-Z0-9$_-]+\\.png$": "<rootDir>/RelativeImageStub.js",
+      "module_name_(.*)": "<rootDir>/substituted_module_$1.js"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "promise",
+      "source-map",
+      "react",
+      "react-native",
+      "node_modules/react",
+      "node_modules/react-native"
+    ],
+    "globals": {
+      "__DEV__": true
+    }
+  }
+}
