@@ -26,6 +26,6 @@ $ xsy      
 ]
 ```
 
-## package.json 
+## crm_package.json 
 
 根据最新版package.json 修改即可
