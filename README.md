@@ -4,7 +4,7 @@
 ## installion
 
 ```shell
-curl https://raw.githubusercontent.com/xsy-config/CRM_CONFIG/master/install| python
+curl https://raw.githubusercontent.com/xsy-config/CRM_CONFIG/master/install | python
 ```
 
 
