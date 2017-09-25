@@ -44,20 +44,14 @@ def replaceFileContent( filePath,oldStr,newStr ):
     d_file.close()
     os.rename(filePath+'.tmp',filePath)
     print filePath + '--->>>已经替换完成'
-    print br
 
 
 
 
 if __name__ == "__main__":
 
-
-    print 'hahhahha-----'
-
     os.system('rm package.json')
     os.system('curl -C -  -o package.json https://raw.githubusercontent.com/xsy-config/CRM_CONFIG/master/crm_package.json')
- 
-
     os.system("npm install")
     print br
     data = registerUrl()  
