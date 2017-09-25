@@ -15,9 +15,9 @@ $ xsy      
 ```
 
 
-crm  命令配置信息
+## crm  命令配置信息
 
-修改规则
+* 修改规则
 ```js
 [
     ["node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h", "#import <RCTAnimation/RCTValueAnimatedNode.h>", "#import <RCTValueAnimatedNode.h>"],
