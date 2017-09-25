@@ -7,6 +7,8 @@ import urllib2
 import json  
 import  re
 
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 CONFIG_URL = "https://raw.githubusercontent.com/xsy-config/CRM_CONFIG/master/crm.json"
 
