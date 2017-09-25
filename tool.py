@@ -35,19 +35,16 @@ def replaceFileContent( filePath,oldStr,newStr ):
 
     if not os.path.isfile(filePath):
         print filePath + '--->>>这个文件文件不存在'
-        print br
         sys.exit()
-        s_file  = file(filePath,'r+')
-        old_str = sys.argv[2]
-        new_str = sys.argv[3]
-        d_file  = file(filePath+'.tmp','w')
-        for line in s_file.readlines():
-            d_file.writelines(line.replace(old_str,new_str))
-        s_file.close()
-        d_file.close()
-        os.rename(filePath+'.tmp',filePath)
-        print filePath + '--->>>已经替换完成'
-        print br
+    s_file  = file(filePath,'r+')
+    d_file  = file(filePath+'.tmp','w')
+    for line in s_file.readlines():
+        d_file.writelines(line.replace(oldStr,newStr))
+    s_file.close()
+    d_file.close()
+    os.rename(filePath+'.tmp',filePath)
+    print filePath + '--->>>已经替换完成'
+    print br
 
 
 
@@ -65,7 +62,7 @@ if __name__ == "__main__":
     print br
     data = registerUrl()  
     replaceConfigs = praserJsonFile(data) 
-    for replaceConfig in replaceConfigs:       
+    for replaceConfig in replaceConfigs:  
         replaceFileContent(replaceConfig[0],replaceConfig[1],replaceConfig[2])
     print br
     os.system("pod install")
