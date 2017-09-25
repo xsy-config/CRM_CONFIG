@@ -17,7 +17,7 @@ $ xsy      
 
 ## crm  命令配置信息
 
-* 修改规则
+* 修改规则  ！！！  修改规则需要提交到本仓库才生效
 ```js
 [
     ["node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h", "#import <RCTAnimation/RCTValueAnimatedNode.h>", "#import <RCTValueAnimatedNode.h>"],
